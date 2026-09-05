@@ -6,18 +6,19 @@ The main goal of this project was to understand how AWS networking components wo
 ## Architecture
 The architecture consists of:
 
-1 VPC
-2 Availability Zones
-2 Public Subnets
-2 Private Subnets
-Internet Gateway
-2 NAT Gateways
-Application Load Balancer
-Auto Scaling Group
-2 EC2 instances in private subnets
-Bastion Host for SSH access
-Security Groups
-Network ACLs
+- 1 VPC
+- 2 Availability Zones
+- 2 Public Subnets
+- 2 Private Subnets
+- Internet Gateway
+- 2 NAT Gateways
+- Application Load Balancer
+- Auto Scaling Group
+- 2 EC2 instances in private subnets
+- Bastion Host for SSH access
+- Security Groups
+- Network ACLs
+
 ![Architecture Diagram](architecture/architecture-diagram.jpg)
 
 ## Application
@@ -70,7 +71,8 @@ A Bastion Host was used as the SSH entry point to the private EC2 instances.
 
 The connection flow was:
 
-``` My Computer
+```
+My Computer
      |
      | SSH
      v
@@ -106,19 +108,17 @@ Example responses showed different hostnames:
 ```
 
 ## Technologies / AWS Services
--AWS VPC
--EC2
--Application Load Balancer
--Auto Scaling Group
--NAT Gateway
--Internet Gateway
--Security Groups
--Network ACLs
--Route Tables
--Availability Zones
--Linux
--Node.js
--Express.js
+- AWS VPC
+- EC2
+- Application Load Balancer
+- Auto Scaling Group
+- NAT Gateway
+- Internet Gateway
+- Security Groups
+- Network ACLs
+- Route Tables
+- Node.js
+- Express.js
 
 ## Project Status
 The AWS resources were terminated after completing the project to avoid unnecessary ongoing costs.
